@@ -1,0 +1,13 @@
+/.git/
+/.idea/
+/vendor
+/composer.lock
+
+vendor
+composer.lock
+doc
+output
+.idea
+.buildpath
+.project
+.settings
