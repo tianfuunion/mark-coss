@@ -1,13 +1,5 @@
 /.git/
 /.idea/
+/.travis.yml
 /vendor
 /composer.lock
-
-vendor
-composer.lock
-doc
-output
-.idea
-.buildpath
-.project
-.settings

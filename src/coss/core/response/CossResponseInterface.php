@@ -1,9 +1,11 @@
 <?php
+    declare (strict_types=1);
 
-namespace mark\coss\core\response;
+    namespace mark\coss\core\response;
 
-interface CossResponseInterface {
+    interface CossResponseInterface
+    {
 
-    public function getResponse($status, $reason, $result);
+        public function getResponse($status, $reason, $result);
 
-}
+    }
