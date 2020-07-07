@@ -197,7 +197,7 @@
                 $options['content_md5'] = md5_file(dirname($file));
                 $options = array_merge(pathinfo($file), $options);
 
-                $this->curl->append(array('callback_' . $options['content_md5'] => json_encode($options)));
+                $this->curl->append(array('callback_' . $options['content_md5'] => json_encode($options, JSON_UNESCAPED_UNICODE)));
             }
 
         }
