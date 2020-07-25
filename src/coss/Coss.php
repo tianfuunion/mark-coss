@@ -49,7 +49,9 @@
 
         private $appId;
         private $appSecret;
-
+        /**
+         * @var Curl
+         */
         private $curl;
 
         /**
@@ -86,7 +88,7 @@
                 throw new CossException('endpoint is empty');
             }
 
-            $this->curl = Curl::getInstance();
+            $this->curl = Curl::getInstance(true);
             $this->curl->upload('https://' . $endpoint . '/api.php/objects/upload');
 
             $this->curl->append(
